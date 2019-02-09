@@ -10,7 +10,7 @@ import pl.edu.wszib.springhelloworld.model.Dziecko;
 public class MyConfig2 {
     @Bean
     @Scope("prototype")
-    public Ciastko ctastko() {
+    public Ciastko ciastko() {
         return new Ciastko();
     }
 

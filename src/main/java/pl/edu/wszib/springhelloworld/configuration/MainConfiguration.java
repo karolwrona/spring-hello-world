@@ -39,7 +39,7 @@ public class MainConfiguration {
         return new Mis();
     }
     @Bean("Klocki")
-    public Zabawka zabawka3(){
+    public Zabawka zabawka899(){
         return new Klocki();
     }
 

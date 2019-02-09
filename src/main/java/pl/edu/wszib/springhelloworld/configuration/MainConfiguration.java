@@ -30,19 +30,16 @@ public class MainConfiguration {
         grzes.odpakuj();
         return grzes;
     }
-    @Bean
-    @Qualifier("Samochodzik")
-    public Zabawka samochodzik(){
+    @Bean("Samochodzik")
+    public Zabawka zabawka1(){
         return new Samochodzik();
     }
-    @Bean
-    @Qualifier("Mis")
-    public Zabawka mis(){
+    @Bean("Mis")
+    public Zabawka zabawka2(){
         return new Mis();
     }
-    @Bean
-    @Qualifier("Klocki")
-    public Zabawka klocki(){
+    @Bean("Klocki")
+    public Zabawka zabawka3(){
         return new Klocki();
     }
 

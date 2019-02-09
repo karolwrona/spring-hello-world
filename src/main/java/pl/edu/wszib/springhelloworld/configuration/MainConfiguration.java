@@ -42,7 +42,7 @@ public class MainConfiguration {
     }
 
     @Bean
-    @Scope("prototype")
+    @Scope(SCOPE_PROTOTYPE)
     public Kubek kubek() {
         return new Kubek();
     }

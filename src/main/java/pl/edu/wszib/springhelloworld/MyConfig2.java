@@ -8,11 +8,6 @@ import pl.edu.wszib.springhelloworld.model.Dziecko;
 
 @Configuration
 public class MyConfig2 {
-    @Bean
-    @Scope("prototype")
-    public Ciastko ciastko() {
-        return new Ciastko();
-    }
 
     @Bean
     public Dziecko jas(Ciastko ciastko) {

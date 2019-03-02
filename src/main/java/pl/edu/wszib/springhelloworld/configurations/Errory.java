@@ -1,5 +1,6 @@
 package pl.edu.wszib.springhelloworld.configurations;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -26,7 +27,7 @@ public class Errory {
     }
     @ExceptionHandler(RuntimeException2.class)
     public String exception1(){
-        return "ERROR2";
+        return "Error2";
     }
     @ExceptionHandler(RuntimeException3.class)
     public String exception2(){

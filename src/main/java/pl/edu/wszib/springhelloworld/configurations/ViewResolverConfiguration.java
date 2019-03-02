@@ -8,11 +8,11 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 @Configuration
 public class ViewResolverConfiguration {
 
-    //@Bean
-   // public ViewResolver viewResolver() {
-   //     InternalResourceViewResolver resolver = new InternalResourceViewResolver();
-   //     resolver.setPrefix("/");
-   //     resolver.setSuffix(".html");
-    //    return resolver;
-   // }
+    @Bean
+    public ViewResolver viewResolver() {
+        InternalResourceViewResolver resolver = new InternalResourceViewResolver();
+        resolver.setPrefix("/");
+        resolver.setSuffix(".jpg");
+        return resolver;
+    }
 }
